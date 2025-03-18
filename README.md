@@ -28,7 +28,9 @@ Examples:
   │ magic_bytes  │ [FF, D8] │
   ╰──────────────┴──────────╯
 ```
+
 ## Example with MacOS executable
+
 ```nushell
 ❯ file ~/.cargo/bin/nu | table -e 
 ╭─────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────╮
@@ -55,8 +57,18 @@ Examples:
 ```
 
 ## Installation
-1. clone repo `git clone https://github.com/fdncred/nu_plugin_file.git`
-2. install with cargo `cargo install --path .`
-3. register plugin with nushell `plugin add /path/to/nu_plugin_file`
-4. bring plugin into scope `plugin use /path/to/nu_plugin_file`
-5. inspect a file `file some.jpg`
+
+### Pre-compiled binaries
+
+Download binaries corresponding to your operating system from releases.
+
+### From source
+
+1. Clone repo `git clone https://github.com/fdncred/nu_plugin_file.git`.
+2. Install with cargo `cargo install --path .`.
+
+## Registration and Usage
+
+1. register plugin with nushell `plugin add /path/to/nu_plugin_file`.
+2. bring plugin into scope `plugin use /path/to/nu_plugin_file`.
+3. inspect a file `file some.jpg`.
